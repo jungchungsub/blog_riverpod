@@ -1,5 +1,11 @@
 import 'package:blog_riverpod/core/routers.dart';
+import 'package:blog_riverpod/view/pages/post/detail_page.dart';
 import 'package:blog_riverpod/view/pages/post/home_page.dart';
+import 'package:blog_riverpod/view/pages/post/update_page.dart';
+import 'package:blog_riverpod/view/pages/post/write_page.dart';
+import 'package:blog_riverpod/view/pages/user/join_page.dart';
+import 'package:blog_riverpod/view/pages/user/login_page.dart';
+import 'package:blog_riverpod/view/pages/user/user_info_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -23,13 +29,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: Routers.home,
       routes: {
-        Routers.home: (context) => const HomePage(),
-        Routers.detail: (context) => const HomePage(),
-        Routers.updateForm: (context) => const HomePage(),
-        Routers.joinForm: (context) => const HomePage(),
-        Routers.loginForm: (context) => const HomePage(),
-        Routers.writeForm: (context) => const HomePage(),
-        Routers.userInfo: (context) => const HomePage(),
+        Routers.home: (context) => HomePage(),
+        Routers.detail: (context) => DetailPage(),
+        Routers.updateForm: (context) => UpdatePage(),
+        Routers.joinForm: (context) => JoinPage(),
+        Routers.loginForm: (context) => LoginPage(),
+        Routers.writeForm: (context) => WritePage(),
+        Routers.userInfo: (context) => UserInfoPage(),
       },
     );
   }
