@@ -2,7 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart';
 
 final httpConnector = Provider<HttpConnector>((ref) {
-  return HttpConnector();
+  return HttpConnector(); //read하거나  watch해야지 뜬다.
 });
 
 class HttpConnector {
